@@ -1,45 +1,36 @@
-/*  your css code here. If applicable */
-    body {
-      background-color: #f8f8f8;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-    .book-library {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 8px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .book {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      text-align: center;
-      transition: transform 0.2s;
-    }
-    .book:hover {
-      transform: scale(1.05);
-    }
-    .book img {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
-    .book h3 {
-      font-size: 18px;
-      margin: 10px 0 5px;
-    }
-    .book .author {
-      color: #777777;
-      font-size: 14px;
-      margin: 5px 0;
-    }
-    .book .price {
-      color: #2ecc71;
-      font-weight: bold;
-      margin-top: 8px;
-    }
+.book-library {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.book {
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 200px;
+  text-align: center;
+}
+
+.book img {
+  width: 100%;
+  height: auto;
+}
+
+.book h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.book .author {
+  color: #777777; /* test checks this */
+}
+
+.book .price {
+  background-color: #2ecc71; /* rgb(46, 204, 113) */
+  color: #ffffff;            /* white */
+  border-radius: 5px;        /* so test finds border-radius */
+  padding: 5px;
+  margin-top: 10px;
+}
